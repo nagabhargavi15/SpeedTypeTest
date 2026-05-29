@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeMaster - Premium AI-Powered Typing Speed Test</title>
+  <meta name="description" content="Elevate your typing performance with TypeMaster, a modern dark-theme real-time typing speed test featuring AI-generated paragraphs, detailed accuracy analyses, and structural practice guides.">
+  
+  <!-- Modern Fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Link to stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADING / SPLASH SCREEN -->
+  <div class="loader-overlay" id="loader-overlay">
+    <div class="loader-content">
+      <div class="loader-logo-container">
+        <img src="image15.png" alt="TypeMaster Logo" class="loader-logo">
+      </div>
+      <div class="loader-text-wrapper">
+        <span class="loader-text">INITIALIZING</span>
+        <span class="loader-dots">
+          <span class="dot">.</span>
+          <span class="dot">.</span>
+          <span class="dot">.</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIXED STICKY NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" id="nav-brand">
+        <img src="image15.png" alt="TypeMaster Logo" class="nav-logo">
+        <span class="brand-name">TypeMaster</span>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Nav Links in exact order: Home | About | Features | Typing Guide | Start Test -->
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#features" class="nav-link" data-section="features">Features</a>
+        <a href="#guide" class="nav-link" data-section="guide">Typing Guide</a>
+        <a href="login.html" class="nav-link nav-btn-login">Login</a>
+        <a href="#start-test" class="nav-link nav-btn-cta" data-section="start-test">Start Test</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Background decorative glowing circles -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- Main Website Wrapper -->
+  <div class="main-wrapper">
+    
+    <!-- SECTION 1: HOME SECTION -->
+    <section class="content-section" id="home">
+      <div class="section-container">
+        <div class="hero-block">
+          <span class="hero-badge">⚡ Next-Gen Typing Arena</span>
+          <h1 class="hero-title">Master Your Typing Skills with <span class="text-neon-blue">TypeMaster</span></h1>
+          <p class="hero-subtitle">Improve your speed, accuracy, and performance with AI-powered typing tests. Generate custom practice sessions on any topic instantly.</p>
+          
+          <div class="hero-actions">
+            <a href="#start-test" class="btn btn-primary">
+              <span>Start Typing Test</span>
+              <span class="btn-icon-arrow">➔</span>
+            </a>
+            <a href="#guide" class="btn btn-secondary">
+              <span>Read Guide</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="home-graphic-wrapper">
+          <div class="keyboard-preview-container">
+            <div class="keyboard-preview-glow"></div>
+            <!-- Dynamic neon dashboard preview styling -->
+            <div class="dashboard-wireframe">
+              <div class="wireframe-bar">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <div class="wireframe-content">
+                <span class="wire-char">⚡</span>
+                <span class="wire-char">T</span>
+                <span class="wire-char">y</span>
+                <span class="wire-char">p</span>
+                <span class="wire-char">e</span>
+                <span class="wire-char">M</span>
+                <span class="wire-char">a</span>
+                <span class="wire-char">s</span>
+                <span class="wire-char">t</span>
+                <span class="wire-char">e</span>
+                <span class="wire-char">r</span>
+                <span class="wire-cursor">|</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT SECTION -->
+    <section class="content-section" id="about">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="glowing-image-wrapper">
+              <img src="image15.png" alt="TypeMaster Concept" class="about-image">
+              <div class="image-glow-ring"></div>
+            </div>
+          </div>
+          
+          <div class="about-info">
+            <span class="section-badge">🚀 About the App</span>
+            <h2 class="section-title">Elevate Your <span class="text-neon-blue">Keyboard Velocity</span></h2>
+            <p class="about-description font-highlight">
+              TypeMaster is a simple and interactive typing practice web application designed to help users improve their typing speed, accuracy, and confidence through regular practice.
+            </p>
+            
+            <!-- How It Works subsection -->
+            <div class="how-it-works-box">
+              <h3>How It Works</h3>
+              <ul class="works-list">
+                <li>
+                  <span class="list-number">1</span>
+                  <div class="list-text">
+                    <strong>Choose Mode</strong>
+                    <p>Select an input difficulty or enter a custom topic to generate a unique text paragraph.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="list-number">2</span>
+                  <div class="list-text">
+                    <strong>Start Typing</strong>
+                    <p>Begin typing the given text on the screen to automatically activate the timer.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="list-number">3</span>
+                  <div class="list-text">
+                    <strong>Get Instant Results</strong>
+                    <p>Receive comprehensive metric evaluations: Words Per Minute (WPM), Accuracy percentage, and Mistakes.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: FEATURES SECTION -->
+    <section class="content-section" id="features">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">🎯 Peak Optimization</span>
+          <h2 class="section-title">Professional <span class="text-neon-blue">Features</span></h2>
+          <p class="section-subtitle">Engineered with robust systems to provide real-time diagnostic performance metrics.</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <span class="feature-icon">📈</span>
+            </div>
+            <h3>WPM Tracking</h3>
+            <p>Calculates dynamic Words Per Minute (WPM) speeds on every keypress utilizing industry-standard correct letter division ratios.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <span class="feature-icon">🎯</span>
+            </div>
+            <h3>Accuracy Analysis</h3>
+            <p>Calculates character success percentages in real-time, mapping typed counts against target structures.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <span class="feature-icon">🚨</span>
+            </div>
+            <h3>Error Detection</h3>
+            <p>Identifies correct vs incorrect entries instantly with custom high-contrast red visual markers and underline guides.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <span class="feature-icon">🤖</span>
+            </div>
+            <h3>AI-Generated Paragraphs</h3>
+            <p>Generates highly context-rich training texts based on any custom keyword topic using our compiling generation system.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <span class="feature-icon">📊</span>
+            </div>
+            <h3>Performance Dashboard</h3>
+            <p>Aggregates diagnostic statistics in a sleek, glassmorphic card deck with top neon borders and floating highlights.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <span class="feature-icon">⌨️</span>
+            </div>
+            <h3>Developer Grade UX</h3>
+            <p>Supports low-time countdown warnings, Esc hotkey resets, mobile nav drawer controls, and browser autofocus filters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: TYPING GUIDE SECTION -->
+    <section class="content-section" id="guide">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">📚 Educational Guides</span>
+          <h2 class="section-title">Ultimate <span class="text-neon-blue">Typing Guide</span></h2>
+          <p class="section-subtitle">Learn the mechanics of physical key coordination and optimize your daily practice routine.</p>
+        </div>
+
+        <div class="guide-grid">
+          <!-- Subsection A: Instructions -->
+          <div class="guide-card instruction-card">
+            <div class="guide-card-header">
+              <span class="guide-icon">⚙️</span>
+              <h3>Instructions & System Rules</h3>
+            </div>
+            <ul class="guide-list">
+              <li>
+                <strong>How to Start the Test:</strong> 
+                Scroll to the <em>Start Test</em> section, enter a custom topic or select a preset difficulty, click "Generate Paragraph", click the text area or press any key, and type the flashing cursor letter.
+              </li>
+              <li>
+                <strong>How AI Paragraph Generation Works:</strong> 
+                Type a topic term (e.g. "Space" or "Coding") and click "Generate Paragraph". The engine processes the keyword, triggers an animation, and populates highly specific sentences containing relevant vocabulary.
+              </li>
+              <li>
+                <strong>How Results are Calculated:</strong> 
+                <br>
+                • <em>WPM:</em> Calculated as <code>(Correct Characters / 5) / (Seconds Elapsed / 60)</code>.
+                <br>
+                • <em>Accuracy:</em> Percentage calculated by dividing total correct keystrokes by the total typed keystrokes.
+              </li>
+              <li>
+                <strong>Rules of the Test:</strong> 
+                The countdown timer begins on your very first keystroke. You cannot backtrack to edit previously completed characters. Hitting the <code>Esc</code> key instantly resets the session with a fresh text display.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Subsection B: Tips & Tricks -->
+          <div class="guide-card tips-card">
+            <div class="guide-card-header">
+              <span class="guide-icon">💡</span>
+              <h3>Expert Tips & Tricks</h3>
+            </div>
+            <ul class="guide-list">
+              <li>
+                <strong>Proper Finger Placement (Home Row Method):</strong> 
+                Rest your fingers on the middle row keys (ASDF for the left hand, JKL; for the right hand) with thumbs poised on the spacebar. Return to this home position after reaching for other keys.
+              </li>
+              <li>
+                <strong>Don't Look at the Keyboard:</strong> 
+                Rely entirely on physical muscle memory. Train your brain to map characters to finger finger reaches without visually confirming keyboard labels.
+              </li>
+              <li>
+                <strong>Focus on Accuracy First:</strong> 
+                Speed is a natural by-product of high accuracy. Prioritize typing clean, mistake-free letters; rhythm and acceleration will naturally develop.
+              </li>
+              <li>
+                <strong>Daily Consistent Practice:</strong> 
+                Just 15 minutes of deliberate practice daily is far more effective than massive weekly cram sessions.
+              </li>
+              <li>
+                <strong>Maintain Proper Ergonomic Posture:</strong> 
+                Sit straight, keep elbows bent at a 90-degree angle, look straight at the screen, and rest wrists comfortably above the desk.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: START TEST SECTION (HOUSING THE CORE TYPING TEST APP) -->
+    <section class="content-section" id="start-test">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">🚀 Play Arena</span>
+          <h2 class="section-title">Interactive <span class="text-neon-blue">Speed Test</span></h2>
+          <p class="section-subtitle">Configure your settings or enter an AI topic parameter, generate a unique text paragraph, and begin typing.</p>
+        </div>
+
+        <div class="app-container" id="typing-app-container">
+          
+          <!-- AI TOPIC GENERATOR HEADER INTERFACE -->
+          <div class="ai-generator-panel">
+            <div class="ai-input-group">
+              <span class="ai-icon">🤖</span>
+              <input type="text" id="ai-topic-input" placeholder="Enter custom typing topic (e.g. Coding, Nature, Cooking, Space...)" autocomplete="off">
+            </div>
+            <button class="btn btn-primary" id="ai-generate-btn">
+              <span class="btn-sparkle">✨</span>
+              <span>Generate Paragraph</span>
+            </button>
+          </div>
+
+          <!-- Settings Dashboard -->
+          <section class="settings-panel">
+            <!-- Difficulty Tabs -->
+            <div class="setting-group">
+              <span class="setting-label">Preset Difficulty</span>
+              <div class="tabs" id="difficulty-tabs">
+                <button class="tab-btn active" data-difficulty="easy">Easy</button>
+                <button class="tab-btn" data-difficulty="medium">Medium</button>
+                <button class="tab-btn" data-difficulty="hard">Hard</button>
+              </div>
+            </div>
+
+            <!-- Time Limit Tabs -->
+            <div class="setting-group">
+              <span class="setting-label">Time Limit</span>
+              <div class="tabs" id="time-tabs">
+                <button class="tab-btn" data-time="15">15s</button>
+                <button class="tab-btn active" data-time="30">30s</button>
+                <button class="tab-btn" data-time="60">60s</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Main Stats Dashboard -->
+          <section class="stats-dashboard">
+            <div class="stat-card" id="card-time">
+              <div class="stat-value" id="stat-time">30</div>
+              <div class="stat-label">Seconds Left</div>
+            </div>
+            <div class="stat-card" id="card-wpm">
+              <div class="stat-value" id="stat-wpm">0</div>
+              <div class="stat-label">WPM</div>
+            </div>
+            <div class="stat-card" id="card-accuracy">
+              <div class="stat-value" id="stat-accuracy">100%</div>
+              <div class="stat-label">Accuracy</div>
+            </div>
+            <div class="stat-card" id="card-errors">
+              <div class="stat-value" id="stat-errors">0</div>
+              <div class="stat-label">Mistakes</div>
+            </div>
+          </section>
+
+          <!-- Typing Interactive Area -->
+          <main class="typing-container" id="typing-container">
+            <!-- Hidden Input to capture all typing inputs cleanly (supports Mobile & Desktop) -->
+            <textarea class="hidden-input" id="hidden-input" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Start typing..."></textarea>
+            
+            <!-- Visual container for text characters -->
+            <div class="text-display" id="text-display">
+              <!-- Spans of individual letters will be inserted here dynamically via JavaScript -->
+              Loading training paragraph...
+            </div>
+
+            <!-- Focus prompt helper overlay -->
+            <div class="focus-overlay" id="focus-overlay">
+              <span class="focus-icon">🖱️</span>
+              <p>Click here or press any key to focus and type</p>
+            </div>
+          </main>
+
+          <!-- Footer Controls -->
+          <footer class="app-footer">
+            <button class="btn btn-primary" id="restart-btn">
+              <span class="btn-icon">🔄</span>
+              <span>Restart Test</span>
+            </button>
+            <p class="instruction-tip">Tip: Press <kbd class="key-cap">Esc</kbd> to quickly restart the typing speed test at any time!</p>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer Brand Bar -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="image15.png" alt="TypeMaster Logo" class="footer-logo">
+        <span>TypeMaster</span>
+      </div>
+      <p class="footer-copyright">&copy; 2026 TypeMaster. All Rights Reserved. Built with pure HTML, CSS, and JS.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript logic file -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
